@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"strconv"
 
 	"rsc.io/quote"
@@ -74,4 +75,22 @@ func main() {
 
 	fmt.Printf("Hola, me llamo %s y tengo %d años.\n", firstName, age)
 
+	//resolver problemas de area de un triangulo rectangulo
+
+	var lado1, lado2 float64
+
+	fmt.Print("Ingrese el lado 1:")
+	fmt.Scanln(&lado1)
+	fmt.Print("Ingrese el lado 2:")
+	fmt.Scanln(&lado2)
+
+	//process
+
+	area := (lado1 * lado2) / 2
+	hipotenusa := math.Sqrt(math.Pow(lado1, 2) + math.Pow(lado2, 2))
+	perimetro := lado1 + lado2 + hipotenusa
+
+	fmt.Printf("El area del triangulo es: %.2f\n", area)
+	fmt.Printf("La hipotenusa del triángulo es: %.2f\n", hipotenusa)
+	fmt.Printf("El perímetro del triángulo es: %.2f\n", perimetro)
 }
