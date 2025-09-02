@@ -64,4 +64,14 @@ func main() {
 	fmt.Println("Apellido:", lastName)
 	fmt.Println("Pais:", country)
 	fmt.Println("Año:", year)
+
+	//package fmt
+
+	fmt.Print("Ingresar un nombre: ")
+	fmt.Scanln(&firstName)
+	fmt.Print("Ingrese su edad: ")
+	fmt.Scanln(&age)
+
+	fmt.Printf("Hola, me llamo %s y tengo %d años.\n", firstName, age)
+
 }
