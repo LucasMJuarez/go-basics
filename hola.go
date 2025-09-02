@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 
 	"rsc.io/quote"
 )
@@ -31,6 +32,7 @@ func main() {
 	fmt.Println("El valor de Pi es:", Pi)
 	fmt.Println(x, y, z, w)
 	fmt.Println(Domingo, Lunes, Martes, Miercoles, Jueves, Viernes, Sabado)
+
 	//Declaracion de variables 1ERA FORMA
 	//var firstName string = "Luis"
 	//var age int = 23
@@ -42,6 +44,21 @@ func main() {
 	//Declaracion de las variables tercera forma
 	lastName, country, year := "Juarez", "Argentina", 2024
 
+	//conversion de tipos
+
+	var integer16 int16 = 1000
+	var integer32 int32 = 50
+
+	fmt.Println("Suma:", integer16+int16(integer32))
+
+	s := "100"
+	i, _ := strconv.Atoi(s)
+	fmt.Println("Entero:", i)
+
+	n := 43
+	s = strconv.Itoa(n)
+
+	fmt.Println("String:", s)
 	fmt.Println("Nombre:", firstName)
 	fmt.Println("Edad:", age)
 	fmt.Println("Apellido:", lastName)
