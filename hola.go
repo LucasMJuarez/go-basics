@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 
 	"rsc.io/quote"
 )
@@ -50,6 +51,14 @@ func main() {
 
 	fmt.Println("Suma:", integer16+int16(integer32))
 
+	s := "100"
+	i, _ := strconv.Atoi(s)
+	fmt.Println("Entero:", i)
+
+	n := 43
+	s = strconv.Itoa(n)
+
+	fmt.Println("String:", s)
 	fmt.Println("Nombre:", firstName)
 	fmt.Println("Edad:", age)
 	fmt.Println("Apellido:", lastName)
